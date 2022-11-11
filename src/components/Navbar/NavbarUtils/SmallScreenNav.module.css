@@ -1,0 +1,38 @@
+.smallNavContainer{
+    z-index: 50;
+    position: fixed;
+    padding:15px 20px;
+    background: transparent;
+    display:none;
+}
+
+.smallNav{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.icon path{
+    stroke: #FFFFFF;
+}
+
+.title{
+    font-size:1rem;
+    font-weight:900;
+    color:#FFFFFF;
+}
+
+@media all and (max-width: 656px) {
+    .smallNavContainer{
+        background: var(--background1);
+        margin: auto;
+        display: block;
+    }
+}

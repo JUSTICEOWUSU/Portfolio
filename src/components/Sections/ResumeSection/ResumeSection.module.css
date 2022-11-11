@@ -1,0 +1,17 @@
+.resumeSectionContainer{
+    background: var(--background1);
+    margin: 60px auto;
+
+}
+
+@media all and (max-width: 770px) {
+    .title{
+        font-size: 1.55rem;
+    }
+}
+
+@media all and (max-width: 656px) {
+    .title{
+        font-size: 1.45rem;
+    }
+}

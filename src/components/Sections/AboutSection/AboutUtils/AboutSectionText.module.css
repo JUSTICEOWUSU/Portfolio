@@ -1,0 +1,45 @@
+.aboutMe {
+    text-align: left;
+    margin: auto;
+    padding: 10px 4px;
+    font-family: sans-serif;
+
+}
+
+.aboutText {
+    word-spacing: 1.5px;
+    font-size: 1rem;
+    color: rgb(97, 95, 95);
+}
+
+.highlights h4{
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+
+.highlights span {
+    padding: 0;
+    color: rgb(97, 95, 95);
+}
+
+@media all and (max-width: 770px) {
+    .aboutText {
+        word-spacing: 2px;
+        font-size: 0.9rem;
+    }
+
+    .highlights span{
+        font-size: 0.85rem;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aboutText {
+        word-spacing: 3px;
+        font-size: 0.8rem;
+    }
+
+    .highlights span{
+        font-size: 0.8rem;
+    }
+}

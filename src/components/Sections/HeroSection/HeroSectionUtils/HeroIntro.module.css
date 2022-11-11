@@ -1,0 +1,70 @@
+.heroIntroContainer{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.introductionContainer{
+    color:#FFFFFF;
+    margin: auto;
+    text-align: center;
+}
+
+.intro{
+    font-size: 1.4rem;
+}
+
+.name{
+    font-size: 1.6rem;
+    color: var(--other);
+}
+
+.description{
+    font-size: 1.1rem;
+}
+
+.buttons{
+    display: flex;
+    width: 60%;
+    margin: auto;
+
+}
+
+@media all and (max-width: 770px) {
+    .buttons{
+        width: 80%;
+    
+    }
+
+    .heroIntroContainer{
+        height: 70vh;
+    }
+}
+
+@media all and (max-width: 656px) {
+    .intro{
+        font-size: 1.3rem;
+    }
+    
+    .name{
+        font-size: 1.5rem;
+        color: var(--other);
+    }
+    
+    .description{
+        font-size: 1rem;
+    }
+    
+    .buttons{
+        width: 70%;
+    
+    }
+
+  }
+
+  @media all and (max-width: 400px) {
+    .buttons{
+        width: 90%;
+    
+    }
+  }

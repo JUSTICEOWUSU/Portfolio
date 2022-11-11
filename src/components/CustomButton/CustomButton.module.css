@@ -1,0 +1,44 @@
+@keyframes animate {
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.animate {
+  animation: animate 1s ease-in-out infinite;
+}
+
+.btn {
+  border-radius: 3px;
+  padding: 0px 20px;
+  font-size: 1.2rem;
+  margin: auto;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
+
+@media all and (max-width: 770px) {
+  .btn {
+    padding: 0px 8px;
+    font-size: 1.1rem;
+  }
+}
+
+@media all and (max-width: 656px) {
+  .btn {
+    padding: 0px 10px;
+    font-size: 1.1rem;
+  }
+}
