@@ -1,17 +1,45 @@
-.resumeSectionContainer{
-    background: var(--background1);
-    margin: 60px auto;
+.resumeSectionContainer {
+    padding: 20px 0;
+    height: auto;
+    background: var(--primary);
+    padding: 50px auto;
 
+}
+
+.title {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.subTitle {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 60px;
+}
+
+.resumeContainer {
+    background: var(--background1);
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 3px 13px 38px 10px rgba(10,7,13,1);
 }
 
 @media all and (max-width: 770px) {
-    .title{
-        font-size: 1.55rem;
+    .title {
+        font-size: 1.8rem;
     }
 }
 
-@media all and (max-width: 656px) {
-    .title{
-        font-size: 1.45rem;
+@media all and (max-width: 600px) {
+    .resumeContainer{
+        border-radius: unset;
+        width: 100vw;
+        margin: 0;
+        box-shadow: unset;
+
+    }
+    .title {
+        font-size: 1.5rem;
     }
 }
