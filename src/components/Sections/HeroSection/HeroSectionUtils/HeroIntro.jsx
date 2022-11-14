@@ -20,7 +20,7 @@ function HeroIntro() {
           <br />
           <span className={`${style.description}`}>
             Proneness to building application with both front end and backend
-            functioning
+            functionalities
           </span>
         </p>
 

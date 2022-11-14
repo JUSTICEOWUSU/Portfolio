@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = [{
     education:"education",
     programming:"",
-    project:"",
+    projects:"",
     current:"education"
 }]
 
@@ -11,12 +11,14 @@ const resumeState = createSlice({
     name:"resume",
     initialState,
     reducers:{
-        changeResume:(state,{change})=>{
-           let currentState = state[0].current;
-           state[0][currentState] = ""
-           state[0][change] = change;
-           state[0].currentState = change;
-
+        changeResume:(state,{payload})=>{
+            const {content} = payload;
+            const newState =  state[0]
+           let currentState = newState.current;
+           newState[currentState] = ""
+           newState[content] = content;
+           newState.current = content;
+           state = newState
         }
     }
 })

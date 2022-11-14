@@ -1,0 +1,49 @@
+.subContainer {
+    padding: 10px 1px 20px;
+    margin: 0;
+}
+
+.title {
+    width: auto;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: var(--resumeTitle);
+    text-align: left;
+}
+
+.barContainer {
+    width: 140px;
+    height: 15px;
+    padding: 0;
+}
+
+.known {
+    background: var(--background1);
+    height: 100%;
+}
+
+.unknown {
+    background: red;
+    height: 100%;
+}
+
+
+@media all and (max-width: 770px) {
+    .title{
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .title{
+        font-size: 0.9rem;
+    }
+
+    .barContainer{
+        width: 120px;
+    }
+}
+

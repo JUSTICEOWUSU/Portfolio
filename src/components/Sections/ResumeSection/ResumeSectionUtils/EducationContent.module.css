@@ -1,8 +1,6 @@
 
 .mainContainer{
-    padding: 10px;
     height: 100%;
-    background: rgb(236, 233, 226);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,13 +18,14 @@
 
 
 .title{
+    width: auto;
     text-transform: capitalize;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     text-align: left;
     font-size: 1.2rem;
-    color: rgb(230, 107, 20);
+    color: var(--resumeTitle);
 }
 
 .title a{
@@ -40,15 +39,20 @@
     text-align: left;
     margin: 0;
     font-size: 0.8rem;
-    color:rgb(109, 106, 106)
+    color:rgb(94, 93, 93)
 }
 
 .duration{
     border-radius: 3px;
     display: block;
     font-size: 0.8rem;
-    background-color: chartreuse;
-    color: #000;
+    /* background-color: chartreuse;
+    color: #000; */
+    background: var(--background1);
+    border-radius: 2px;
+    /* color: #fff; */
+
+    color: var(--other);
     padding: 4px 12px;
 
 }
@@ -62,16 +66,23 @@
 }
 
 @media all and (max-width: 600px) {
-
     .title{
         font-size: 0.9rem;
+        text-decoration: none;
     }
 
     .description{
         display: block;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         text-align: left;
         color: black;
+        font-family: sans-serif;
+
+    }
+
+    .duration{
+        font-family: sans-serif;
+        font-size: 0.54rem;
     }
 }
 
