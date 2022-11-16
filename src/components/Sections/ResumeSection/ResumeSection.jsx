@@ -11,7 +11,7 @@ function ResumeSection() {
 
   return (
     <div
-      className={`${style.resumeSectionContainer} container-fluid text-center text-white my-5`}
+      id="resume" className={`${style.resumeSectionContainer} container-fluid text-center text-white my-5`}
     >
       <h1 className={`${style.title} m-auto text-center`}> Resume</h1>
       <span className={style.subTitle}>Formal Bio Details</span>

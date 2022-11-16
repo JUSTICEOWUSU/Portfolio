@@ -7,7 +7,7 @@ function HeroIntro() {
     const hireMeStyle = {
         background: "var(--other)",
         color: "#000",
-        "border-radius": "6px",
+        borderRadius: "6px",
       }
 
   return (

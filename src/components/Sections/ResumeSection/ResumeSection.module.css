@@ -3,7 +3,7 @@
     height: auto;
     background: var(--primary);
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 
 }
 
@@ -51,7 +51,6 @@
         width: 100%;
         margin: 0;
         box-shadow: unset;
-
     }
 
     .title {
@@ -73,3 +72,4 @@
         height: 20rem;
     }
 }
+

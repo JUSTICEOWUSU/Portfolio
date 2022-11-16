@@ -13,14 +13,14 @@
     display:block;
 }
 
-/* @media all and (max-width: 770px) {
+@media all and (max-width: 770px) {
     .imageContainer{
         padding: 0;
     }
-} */
+}
 
-/* @media all and (max-width: 656px) {
+@media all and (max-width: 656px) {
     .title{
         font-size: 1.45rem;
     }
-} */
+}

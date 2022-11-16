@@ -1,0 +1,87 @@
+.btnContainer {
+    position: relative;
+    display: block;
+    text-align: left;
+    color: rgb(39, 39, 39);
+    width: auto;
+    padding: 0;
+    margin: 40px auto;
+    border-bottom: 1px solid var(--primary);
+}
+
+.input {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    padding-left: 3px;
+    outline: none;
+    border: none;
+}
+
+.label {
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: 1rem;
+    bottom: 0;
+    transition: bottom 0.3s;
+}
+
+.blur {
+    position: absolute;
+    bottom: 25px;
+}
+
+.txtContainer{
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    background-color: beige;
+    margin: 5px auto 20px;
+    border-bottom: 1px solid #000;
+}
+
+
+.textarea{
+    background-color: beige;
+    padding: 3px 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 90px;
+}
+
+textarea::-webkit-input-placeholder{
+    opacity: 1;
+    color: rgb(54, 54, 54);
+}
+
+.submitContainer{
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+}
+
+.submit{
+    margin-right: 25px;
+    background:var(--primary);
+    color: #fff;
+    padding: 10px 50px;
+}
+
+@media all and (max-width: 770px) { 
+    .input{
+        width: auto;
+    }
+
+    .submit{
+        padding: 8px 40px;
+    }
+}
+
+@media all and (max-width: 600px) { 
+    .submit{
+        padding: 5px 25px;
+    }
+}
+

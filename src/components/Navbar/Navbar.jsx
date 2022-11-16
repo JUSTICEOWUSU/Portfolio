@@ -19,10 +19,10 @@ function Navbar() {
         <span className={style.navbarTitle}>{"JUSTICE"}<span style={{color:"#f7990eef"}}>{"_</>"}</span></span>
 
         <div className={`container d-flex ${style.navbar1}`}>
-          <NavbarButton content={"home"} />
-          <NavbarButton content={"about me"} />
-          <NavbarButton content={"resume"} />
-          <NavbarButton content={"contact me"} />
+          <NavbarButton content={"home"} location="#home"/>
+          <NavbarButton content={"about me"} location="#about"/>
+          <NavbarButton content={"resume"} location="#resume"/>
+          <NavbarButton content={"contact me"} location="#contact"/>
         </div>
       </div>
       <SmallScreenNav onclick={respondToClick}/>
