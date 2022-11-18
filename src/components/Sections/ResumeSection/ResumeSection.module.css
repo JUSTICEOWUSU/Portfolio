@@ -21,7 +21,6 @@
 
 .resumeContainer {
     height: 20rem;
-
     background: var(--background1);
     margin: auto;
     border-top-left-radius: 20px;
@@ -31,7 +30,8 @@
 
 .contentContainer{
     transition: all 2s;
-    background: rgb(236, 233, 226);
+    background: rgb(236, 233, 226);  
+
 }
 
 @media all and (max-width: 770px) {

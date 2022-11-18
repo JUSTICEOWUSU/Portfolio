@@ -9,8 +9,15 @@ function Navbar() {
   const dispatch = useDispatch();
   const nav = useSelector((state) => state.navbar)[0].navbar;
 
+  // functions responding to navbar toggles
   const respondToClick = ()=>{
     return dispatch(mobile())
+  }
+
+  const respondToSmallNaveClick = ()=>{
+    if(nav){
+      return dispatch(mobile())
+    }
   }
 
   return (
@@ -19,10 +26,10 @@ function Navbar() {
         <span className={style.navbarTitle}>{"JUSTICE"}<span style={{color:"#f7990eef"}}>{"_</>"}</span></span>
 
         <div className={`container d-flex ${style.navbar1}`}>
-          <NavbarButton content={"home"} location="#home"/>
-          <NavbarButton content={"about me"} location="#about"/>
-          <NavbarButton content={"resume"} location="#resume"/>
-          <NavbarButton content={"contact me"} location="#contact"/>
+          <NavbarButton onclick={respondToSmallNaveClick} content={"home"} location="#home"/>
+          <NavbarButton onclick={respondToSmallNaveClick} content={"about me"} location="#about"/>
+          <NavbarButton onclick={respondToSmallNaveClick} content={"resume"} location="#resume"/>
+          <NavbarButton onclick={respondToSmallNaveClick} content={"contact me"} location="#contact-me"/>
         </div>
       </div>
       <SmallScreenNav onclick={respondToClick}/>

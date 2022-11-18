@@ -1,7 +1,8 @@
 import React from "react";
 import style from "./CustomInput.module.css";
 
-function CunstomInput({ type, value, blur, onfocus, onchange, label }) {
+// contact me form input
+function CustomInput({ type, value, blur, onfocus, onchange, label,required }) {
   return (
     <span className={`${style.btnContainer} `}>
       <span className={`${style.label} ${style[blur]}`}>{label}</span>
@@ -16,6 +17,7 @@ function CunstomInput({ type, value, blur, onfocus, onchange, label }) {
   );
 }
 
+// contact-me message field(textarea)
 function TextArea({ placeholder, value, onchange }) {
   return (
     <span className={`${style.txtContainer} `}>
@@ -32,12 +34,12 @@ function TextArea({ placeholder, value, onchange }) {
 function Submit({ onclick, text }) {
   return (
     <span className={style.submitContainer}>
-      <button className={style.submit} onClick={onclick}>
+      <button className={style.submit} onClick={onclick} type="submit">
         {text}
       </button>
     </span>
   );
 }
 
-export default CunstomInput;
+export default CustomInput;
 export { TextArea, Submit };

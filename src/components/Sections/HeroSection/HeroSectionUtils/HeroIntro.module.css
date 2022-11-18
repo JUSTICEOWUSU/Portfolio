@@ -27,6 +27,14 @@
     display: flex;
     width: 60%;
     margin: auto;
+    justify-content: center;
+}
+
+.buttons a{
+    margin: auto;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
 
 }
 

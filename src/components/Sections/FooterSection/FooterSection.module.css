@@ -2,7 +2,7 @@
     background: var(--background1);
     display: flex;
     justify-content: space-between;
-    padding: 5.5rem 2rem;
+    padding: 5.8rem 2rem;
     align-items: center;
     clip-path: polygon(100% 0, 100% 56%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 26%);
 }
