@@ -20,7 +20,7 @@ function HeroIntro() {
           <br />
           <span className={style.title}>
             <Typed
-              strings={["Fullstack Developer","Javascript Developer💻","Node JS Dev","React JS Dev"]}
+              strings={["Fullstack Developer","Javascript Developer💻","Node JS Developer","React JS Developer"]}
               typeSpeed={90}
               startDelay= {0}
               backSpeed= {60}

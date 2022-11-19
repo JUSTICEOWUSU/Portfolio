@@ -46,7 +46,6 @@
         z-index: 1000;
     }
 
-
     .navbar1 {
         text-align: left;
         padding: 0;
@@ -65,4 +64,5 @@
     .mobile{
         transform: translateX(0vw);
     }
+    
 }

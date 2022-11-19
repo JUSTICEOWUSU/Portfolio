@@ -11,10 +11,8 @@ function HeroSection() {
 
       <div className={`container-fluid ${style.heroSection}`} id="home">
         <div className={`container row overflow-hidden g-2 mx-auto`}>
-         
-        <HeroIntro/>
-        <HeroImage/>
-          
+          <HeroIntro />
+          <HeroImage />
         </div>
       </div>
     </>
