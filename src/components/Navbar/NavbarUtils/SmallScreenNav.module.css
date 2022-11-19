@@ -1,15 +1,15 @@
 
 .smallNavContainer{
     z-index: 50;
+    display:none;
     position: fixed;
     padding:15px 20px;
     background: transparent;
-    display:none;
 }
 
 .smallNav{
-    padding: 0;
     margin: 0;
+    padding: 0;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -32,8 +32,8 @@
 
 @media all and (max-width: 656px) {
     .smallNavContainer{
-        background: var(--background1);
         margin: auto;
         display: block;
+        background: var(--background1);
     }
 }
