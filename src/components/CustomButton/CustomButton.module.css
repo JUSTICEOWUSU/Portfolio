@@ -29,10 +29,12 @@
 }
 
 
-@media all and (max-width: 770px) {
+
+@media all and (max-width: 800px) {
   .btn {
-    padding: 0px 8px;
-    font-size: 1.1rem;
+   font-family:  'Poppins', sans-serif;
+   font-size: 1rem;
+
   }
 }
 

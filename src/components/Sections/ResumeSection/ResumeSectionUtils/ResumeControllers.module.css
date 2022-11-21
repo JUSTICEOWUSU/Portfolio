@@ -2,11 +2,11 @@
 .buttonContainer {
     flex-grow: 1;
     position: relative;
+    display: flex;
+    align-items: center;
     padding: 10px 30px;
-    width: auto;
     margin: auto;
     width: 100%;
-    overflow: hidden;
     text-align: left;
     text-transform: capitalize;
 
@@ -20,6 +20,7 @@
     position: relative;
     color: #000;
     z-index: 1;
+    flex-grow: 1;
 }
 
 .background {
@@ -47,9 +48,10 @@
 }
 
 .iconContainer {
-    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
     flex-grow: 1;
-    padding: 10px 30px;
     color: #fff;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -60,7 +62,6 @@
 }
 
 .resumeControllersContainer {
-    /* border-right: 0.1px solid rgb(117, 116, 116); */
     height: 100%;
 }
 
@@ -85,16 +86,18 @@
     transform: translate(0);
 }
 
-@media all and (max-width: 770px) {
+@media all and (max-width: 970px) {
     .iconContainer,
     .buttonContainer{
-        padding: 5px 0;
+        padding: 0;
         margin: 0;
+        align-items: baseline;
     }
 
     .buttonContainer{
         padding-right:5px ;
     }
+
     .iconContainer{
         padding-left: 3px;
     }
@@ -106,25 +109,25 @@
     }
 
     .background{
-        right: 4rem;
+        align-items: baseline;
+        justify-content: flex-start;
+        right: 20%;
     }
     
 
 }
 
-@media all and (max-width: 600px) {
-    .buttonContainer {
-        padding: 10px 30px;
+
+@media all and (max-width: 500px) {
+
+    .resumeControllersContainer{
+        height: 25vh;
     }
 
-    .iconContainer{
-        text-align: center;
-        padding: 10px 30px;
-    }
 
     .allButtons,
     .allIcons{
-        padding-bottom: 1rem;
+        padding-bottom: 2%;
         box-shadow: unset;
     }
 

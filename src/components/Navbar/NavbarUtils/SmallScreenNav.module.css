@@ -30,7 +30,7 @@
     color:#FFFFFF;
 }
 
-@media all and (max-width: 656px) {
+@media all and (max-width: 750px) {
     .smallNavContainer{
         margin: auto;
         display: block;

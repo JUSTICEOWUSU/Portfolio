@@ -22,8 +22,9 @@ function ResumeSection() {
         <ResumeControllers/>
         </div>
 
-        <div className={`${style.contentContainer} container m-0 p-3 col-lg-8 col-md-8 g-0 col-sm-12 g-0`}>
+        <div className={`${style.contentContainer} container m-0 py-3 px-1 col-lg-8 col-md-8 g-0 col-sm-12 g-0`}>
 
+          <div className={style.contentInnerContainer}>
           {
             education && <EducationContent/>
           }
@@ -33,6 +34,9 @@ function ResumeSection() {
           {
             projects && <ProjectContent/>
           }
+          </div>
+
+         
         </div>
 
       </div>

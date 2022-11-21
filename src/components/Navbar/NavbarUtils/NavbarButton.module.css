@@ -28,7 +28,7 @@
     }
 }
 
-@media all and (max-width: 656px) {
+@media all and (max-width: 750px) {
     .navLink a {
         font-weight: 400;
     }
@@ -40,10 +40,10 @@
 
     .navLink:hover{
         opacity: 0.7;
-        background-color: black;
+        background-color: rgba(0,0,0,0.4);
     }
 
     .navLink:hover a{
-        color:unset;
+        color:#FFFFFF;
     }
 }

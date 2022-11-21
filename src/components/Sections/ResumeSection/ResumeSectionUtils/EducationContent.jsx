@@ -45,6 +45,7 @@ function EducationContent() {
         place={"basic education certificate"}
         duration={"9 years"}
       />
+    
     </div>
   );
 }

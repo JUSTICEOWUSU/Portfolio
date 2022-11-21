@@ -29,22 +29,27 @@
 }
 
 .contentContainer{
-    transition: all 2s;
+    
+   position: relative;
+   height: 100%; 
     background: rgb(236, 233, 226);  
-
+    overflow-y: scroll;
 }
 
-@media all and (max-width: 770px) {
-    .title {
-        font-size: 1.8rem;
-    }
+.contentInnerContainer{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all 2s;
+}
 
+@media all and (max-width: 990px) {
     .resumeContainer{
-        height: 18rem;
+        height: 30vh;
     }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
     .resumeContainer{
         height: unset;
         border-radius: unset;
@@ -67,9 +72,9 @@
     }
 }
 
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
     .contentContainer{
         height: 20rem;
     }
-}
+} */
 
