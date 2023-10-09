@@ -2,7 +2,7 @@ import React from "react";
 import style from "./CustomInput.module.css";
 
 // contact me form input
-function CustomInput({ type, value, blur, onfocus, onchange, label,required }) {
+function CustomInput({ type, value, blur, onfocus, onchange, label }) {
   return (
     <span className={`${style.btnContainer} `}>
       <span className={`${style.label} ${style[blur]}`}>{label}</span>
