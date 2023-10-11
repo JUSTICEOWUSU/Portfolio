@@ -21,19 +21,17 @@ function Navbar() {
   }
 
   return (
-    <>
-      <div className={`container-fluid ${style.navbar} ${style[nav]}`}>
-        <span className={style.navbarTitle}>{"JUSTICE"}<span style={{color:"#f7990eef"}}>{"_</>"}</span></span>
-
+      <div className={`container ${style.navbar} `}>
+<div className={`${style.fixing}`}>
         <div className={`container d-flex ${style.navbar1}`}>
+                  
+          <span className={style.navbarTitle}>{"JUSTICE"}<span style={{ color: "#f7990eef" }}>{"_</>"}</span></span>
           <NavbarButton onclick={respondToSmallNaveClick} content={"home"} location="#home"/>
-          <NavbarButton onclick={respondToSmallNaveClick} content={"about me"} location="#about"/>
-          <NavbarButton onclick={respondToSmallNaveClick} content={"resume"} location="#resume"/>
-          <NavbarButton onclick={respondToSmallNaveClick} content={"contact me"} location="#contact-me"/>
-        </div>
-      </div>
-      <SmallScreenNav onclick={respondToClick}/>
-    </>
+          <NavbarButton onclick={respondToSmallNaveClick} content={"about"} location="#about"/>
+          <NavbarButton onclick={respondToSmallNaveClick} content={"contact"} location="#contact-me"/>
+</div>      </div>
+</div>
+      // {/* <SmallScreenNav onclick={respondToClick}/> */}
   );
 }
 

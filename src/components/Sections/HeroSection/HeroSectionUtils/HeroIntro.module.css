@@ -1,100 +1,153 @@
-.heroIntroContainer{
-    height: 90vh;
-    display: flex;
-    padding-bottom: 5%;
+.heroIntroContainer {
+  display: flex;
+  margin-top: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.introductionContainer{
-    color:#FFFFFF;
-    margin: auto;
-    text-align: center;
+.introductionContainer {
+  color: #ffffff;
+  margin: auto;
+  height: auto;
+  text-align: left;
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
-.intro{
-    font-size: 1.4rem;
+.intro {
+  font-size: 1.6rem;
 }
 
-.name{
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 1.7rem;
-    color: var(--other);
+.allName {
+  font-size: 2.7rem;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.description{
-    font-size: 0.9rem;
-    font-family: 'Poppins', sans-serif;;
+.name {
+  color: var(--other);
 }
 
-.buttons{
-    display: flex;
-    width: 60%;
-    margin: auto;
-    justify-content: center;
+.description {
+  font-size: 1rem;
+  display: block;
+  margin-top: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.buttons a{
-    margin: auto;
-    outline: none;
-    text-decoration: none;
-    color: inherit;
+.buttons {
+  width: 80%;
+  padding: 0;
+}
 
+.title {
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+
+.buttons a {
+  margin: auto;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.socialIcon {
+  background: var(--background);
+  text-align: center;
+  text-decoration: none;
+  padding: 23px;
+  display: block;
+}
+
+.icon {
+  color: rgb(111, 111, 143);
+  font-size: 30px;
+}
+
+.IconsCont {
+  display: block;
+  margin-top:3%;
+  padding: 0;
+  width:70%
+}
+
+.twitter,
+.insta,
+.github{
+   color: rgb(111, 111, 143);
+  font-size: 40px;
+}
+
+.twitter:hover{
+  color: inherit;
+}
+
+.insta:hover{
+  color: rgb(201, 42, 69);
+}
+
+.github:hover{
+  color:#171515;
+}
+
+.IconText {
+  margin-top: 10px;
+  color: #ffffff;
+  display: block;
+  text-transform: capitalize;
 }
 
 @media all and (max-width: 1000px) {
-    .buttons{
-        width: 100%;
-    }
+  .buttons {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 960px) {
-    .buttons{
-        width: 100%;
-        margin-top: 50px;
-    
-    }
+  .buttons {
+    width: 100%;
+    margin-top: 50px;
+  }
 
-    .heroIntroContainer{
-        height: 80vh;
-        padding-top: 5%;
-        padding-bottom: 3%;
-
-    }
+  .heroIntroContainer {
+    height: 80vh;
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
 }
 
-
 @media all and (max-width: 700px) {
-    .heroIntroContainer{
-        height: 70vh;
-        padding-bottom: 0%;
-        padding-top: 30%;
-        margin-bottom: 0%;
-    }
-
-    .intro{
-        font-size: 1.3rem;
-    }
-    
-    .name{
-        font-size: 1.5rem;
-        color: var(--other);
-    }
-    
-    .description{
-        font-size: 1rem;
-    }
-    
-    .buttons{
-        width: 70%;
-        margin-top: 7%;
-
-    
-    }
-
+  .heroIntroContainer {
+    height: 70vh;
+    padding-bottom: 0%;
+    padding-top: 30%;
+    margin-bottom: 0%;
   }
 
-  @media all and (max-width: 400px) {
-    .buttons{
-        width: 90%;
-    
-    }
+  .intro {
+    font-size: 1.3rem;
   }
+
+  .name {
+    font-size: 1.5rem;
+    color: var(--other);
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    width: 70%;
+    margin-top: 7%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .buttons {
+    width: 90%;
+  }
+}

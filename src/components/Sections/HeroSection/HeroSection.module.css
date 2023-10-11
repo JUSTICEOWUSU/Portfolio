@@ -1,16 +1,8 @@
 .heroSection {
     padding: 0;
+    position: relative;
     margin-top: 0;
     margin: auto;
-    text-align: center;
     min-height: 100vh;
     background: var(--background1);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 72%);
-}
-
-
-@media all and (max-width: 656px) {
-    .heroSection {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 94%);
-    }
 }

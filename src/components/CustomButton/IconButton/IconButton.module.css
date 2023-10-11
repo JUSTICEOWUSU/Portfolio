@@ -1,0 +1,15 @@
+.socialIcon {
+  min-width: 30px;
+  background: var(--background);
+  text-align: left;
+  text-decoration: none;
+  padding: 15px;
+  padding-left:10px;
+  display: block;
+}
+
+.IconText{
+  color: #ffffff;
+  display:block;
+  text-transform:capitalize;
+}

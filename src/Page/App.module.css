@@ -1,0 +1,14 @@
+.App{
+    background: var(--background1);
+    display: flex;
+    align-content: space-evenly;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.content{
+    height: 100vh;
+    overflow:scroll;
+    display: block;
+   transition:all 10s ease !important;
+}
