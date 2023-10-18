@@ -1,14 +1,57 @@
 .App{
     background: var(--background1);
     display: flex;
-    align-content: space-evenly;
+    justify-content: space-evenly;
     height: 100vh;
     overflow:hidden;
+    margin:auto;
+    /* transition:all 10s ease; */
 }
 
 .content{
     height: 100vh;
-    overflow:scroll;
-    display: block;
-   transition:all 10s ease !important;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    padding:15px;
+    padding-top:5px;
+    padding-right:40px;
+}
+
+@media all and (max-width: 1000px) {
+    .App,
+    .content{
+        height:unset;
+        overflow:unset;
+        text-align:left;
+    }
+
+    .content{
+        padding-right:160px;
+        padding-left:30px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .App,
+    .content{
+        padding: 20px;
+    }
+
+    .content{
+        padding-left:0;
+    }
+
+    .Hero{
+        padding: 0;
+        margin:0;
+    }
+}
+
+@media all and (max-width: 450px) {
+    /* .App, */
+    .content{
+        padding-top: 0;
+        padding-bottom:0;
+        padding:5px;
+    }
 }

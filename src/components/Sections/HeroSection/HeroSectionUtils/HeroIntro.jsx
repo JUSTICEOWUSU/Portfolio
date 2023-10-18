@@ -25,14 +25,13 @@ function HeroIntro() {
           <h2 className={`${style.allName}`}>
             I'm <span className={style.name}>Justice Owusu</span>
           </h2>
-          {/* <br /> */}
           <span className={style.title}>
             <Typed
               strings={[
-                "Fullstack Developer",
-                "Javascript Developer💻",
-                "Node JS Developer",
-                "React JS Developer",
+                "Fullstack Dev",
+                "Javascript Dev💻",
+                "Node.JS Dev",
+                "React.JS Dev",
               ]}
               typeSpeed={90}
               startDelay={0}

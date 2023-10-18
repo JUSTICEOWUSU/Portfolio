@@ -3,7 +3,7 @@ import style from "./AboutSectionText.module.css";
 
 function AboutSectionText() {
   return (
-    <div className={`col-lg-6 col-md-6 col-sm-12`}>
+    <div className={``}>
       <div className={`container ${style.aboutMe}`}>
         <p className={`${style.aboutText}`}>
           A Fullstack Javascript developer with ground Knowledge in MERN Stack

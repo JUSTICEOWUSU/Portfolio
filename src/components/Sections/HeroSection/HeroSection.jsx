@@ -6,10 +6,10 @@ import HeroIntro from "./HeroSectionUtils/HeroIntro";
 
 function HeroSection() {
   return (
-    <div className={`container-fluid ${style.heroSection}`} id="home">
+    <div className={`container ${style.heroSection}`} id="home">
       <Navbar />
 
-      <div className={`container overflow-hidden mx-auto`}>
+      <div className={`container overflow-hidden mx-auto p-0`}>
         <HeroIntro />
       </div>
     </div>
