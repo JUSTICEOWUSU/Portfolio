@@ -66,7 +66,7 @@ function ContactMeBox() {
         value={name}
         blur={blur}
         onchange={respondToName}
-        onfocus={respondToBlur}
+        // onfocus={respondToBlur}
       />
       <CustomInput
         type={"email"}
@@ -74,7 +74,7 @@ function ContactMeBox() {
         value={email}
         blur={blur}
         onchange={respondToEmail}
-        onfocus={respondToBlur}
+        // onfocus={respondToBlur}
         required={"true"}
 
       />

@@ -5,16 +5,21 @@
     height: 100vh;
     overflow:hidden;
     margin:auto;
-    /* transition:all 10s ease; */
 }
 
 .content{
     height: 100vh;
     overflow-y:scroll;
     scroll-behavior: smooth;
-    padding:15px;
+    padding:15;
     padding-top:5px;
-    padding-right:40px;
+    padding-right:60px;
+}
+
+
+.Hero{
+    padding: 0 30px !important;
+    /* border:1px solid red; */
 }
 
 @media all and (max-width: 1000px) {
@@ -42,7 +47,7 @@
     }
 
     .Hero{
-        padding: 0;
+        padding: 0 !important;
         margin:0;
     }
 }

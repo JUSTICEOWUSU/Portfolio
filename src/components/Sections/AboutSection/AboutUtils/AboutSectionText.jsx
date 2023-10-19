@@ -11,7 +11,7 @@ function AboutSectionText() {
           with outmost efficiency. Great Professional with certificate from
           FreeCodeCamp and currently a Middler University student pursuing BSC
           Geomatic Engineering( Geodesy and Computer Science ). willing to be an
-          asset of any freelance organization, part time job.
+          asset of any freelance organization, part time job or Intern.
         </p>
 
         <span className={style.highlights}>

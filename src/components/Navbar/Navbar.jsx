@@ -9,7 +9,7 @@ function Navbar() {
 <div className={`${style.fixing}`}>
         <div className={`container d-flex ${style.navbar1}`}>
                   
-          <span className={style.navbarTitle}>{"JUSTICE"}<span style={{ color: "#f7990eef" }}>{"_</>"}</span></span>
+          <span className={style.navbarTitle}>J<span style={{ color: "#f7990eef" }}>{"<>"}</span>STICE</span>
           <NavbarButton  content={"home"} location="#home"/>
           <NavbarButton  content={"about"} location="#about"/>
           <NavbarButton  content={"contact"} location="#contact-me"/>
