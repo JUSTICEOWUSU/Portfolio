@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from "react-typed";
+import {TypeAnimation} from "react-type-animation";
 import style from "./HeroIntro.module.css";
 import CustomButton from "../../../CustomButton/CustomButton";
 import { BsTwitter } from "react-icons/bs";
@@ -26,21 +26,19 @@ function HeroIntro() {
             I'm <span className={style.name}>Justice Owusu</span>
           </h2>
           <span className={style.title}>
-            <Typed
-              strings={[
+            <TypeAnimation
+              sequence={[
                 "Fullstack Dev",
+                1000,
                 "Javascript Dev💻",
+                1000,
                 "Node.JS Dev",
+                1000,
                 "React.JS Dev",
+                1000,
               ]}
-              typeSpeed={90}
-              startDelay={0}
-              backSpeed={60}
-              backDelay={100}
-              loop
-              showCurser
-              autoInsertCss
-              curserChar={"|"}
+              Speed={90}
+              repeat={Infinity}
             />
           </span>
           <span className={`${style.description}`}>
@@ -55,7 +53,6 @@ function HeroIntro() {
 
         <span className={`${style.buttons}`}>
           {" "}
-          
           <a href="#resume">
             <CustomButton text={"Download Resume"} bstyle={customStyle} />
           </a>

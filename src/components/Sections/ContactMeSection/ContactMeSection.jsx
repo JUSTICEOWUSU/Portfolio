@@ -4,7 +4,6 @@ import style from "./ContactMeSection.module.css";
 import CustomInput, { TextArea, Submit } from "./ContactMeUtils/CunstomInput";
 
 function ContactMeBox() {
-  const [blur, setBlur] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
@@ -32,11 +31,6 @@ function ContactMeBox() {
     });
   };
 
-  const respondToBlur = () => {
-    if (!blur) {
-      setBlur("blur");
-    }
-  };
 
   // uses Email.js services to handle email submission
   const respondToSubmit = async (e) => {
@@ -52,7 +46,6 @@ function ContactMeBox() {
     e.preventDefault();
     // email.js
     await emailjs.send(serviceID, templateID, template, publicKey);
-    setBlur("");
     setEmail("");
     setName("");
     setMessage("");
@@ -64,17 +57,13 @@ function ContactMeBox() {
         type={"text"}
         label={"name"}
         value={name}
-        blur={blur}
         onchange={respondToName}
-        // onfocus={respondToBlur}
       />
       <CustomInput
         type={"email"}
         label={"email"}
         value={email}
-        blur={blur}
         onchange={respondToEmail}
-        // onfocus={respondToBlur}
         required={"true"}
 
       />
