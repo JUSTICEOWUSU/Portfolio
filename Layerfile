@@ -11,7 +11,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y nodejs
 
 # Install the latest npm
-RUN sudo npm install -g npm@latest
+RUN sudo npm install -g npm@8
 
 ENV NODE_OPTIONS=--max-old-space-size=8192
 
