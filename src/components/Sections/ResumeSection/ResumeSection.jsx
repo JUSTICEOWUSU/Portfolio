@@ -29,9 +29,9 @@ function ResumeSection() {
       className={`${style.resumeSectionContainer} container-fluid text-center text-white my-5`}
     >
       <h1 className={`${style.title}`}>projects</h1>
-      <ProjectCard  name={"agency app"} tools={"react + node js + bootstrapp + express js "} description={"Agency app for effortless digital marketing"}/>
-      <ProjectCard name={"e-commerce app"} tools={"typescript + nodejs + css module"} description={"E-commerce app for seamless online shopping "}/>
-      <ProjectCard name={"nasa mission control api"} tools={"nodejs + express + mongo db"} description={"Mission control api for Nasa space exploration"}/>
+      <ProjectCard  name={"linxmarketix"} tools={"react + node js + bootstrap + express js "} description={"Agency app for effortless digital marketing"}/>
+      <ProjectCard name={"justice clothing"} tools={"typescript + nodejs + css module"} description={"E-commerce app for seamless online shopping "}/>
+      <ProjectCard name={"nasa mission control"} tools={"nodejs + express + mongo db"} description={"Mission control api for Nasa space exploration"}/>
     </div>
   );
 }
