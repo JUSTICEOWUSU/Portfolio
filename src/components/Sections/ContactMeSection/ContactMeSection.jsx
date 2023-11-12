@@ -11,8 +11,7 @@ function ContactMeBox() {
   const templateID = process.env.REACT_APP_TEMPLATE_ID;
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
-
-// form onchange responds
+  // form onchange responds
   const respondToName = (e) => {
     setName((prev) => {
       return e.target.value;
@@ -31,18 +30,17 @@ function ContactMeBox() {
     });
   };
 
-
   // uses Email.js services to handle email submission
   const respondToSubmit = async (e) => {
-    if(!message || !email){
-      return alert("please provide email and message fields")
+    if (!message || !email) {
+      return alert("please provide email and message fields");
     }
     const template = {
       message,
       name,
       email,
     };
-    
+
     e.preventDefault();
     // email.js
     await emailjs.send(serviceID, templateID, template, publicKey);
@@ -65,13 +63,11 @@ function ContactMeBox() {
         value={email}
         onchange={respondToEmail}
         required={"true"}
-
       />
       <TextArea
         placeholder={"Type your message here"}
         value={message}
         onchange={respondToMessage}
-
       />
       <Submit text={"send mail"} onclick={respondToSubmit} />
     </form>
@@ -85,10 +81,15 @@ function ContactMeSection() {
       className={`container-fluid ${style.contactMeContainer}`}
     >
       <h1 className={`${style.title}`}>let's talk</h1>
-      <div
-        className={`${style.contactMeContent} container`}
-      >
-        
+      <p className={`${style.talkText}`}>
+        For projects, collaborations, or just a friendly chat, use the form
+        below. I'm eager to connect with clients, employers, and fellow
+        developers.
+        <br />
+        <br />
+        Looking forward to our conversation!
+      </p>
+      <div className={`${style.contactMeContent} container`}>
         <div className={` ${style.forms}`}>
           <ContactMeBox />
         </div>

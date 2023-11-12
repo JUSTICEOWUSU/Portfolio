@@ -9,7 +9,9 @@
     word-spacing: 1px;
     font-size: 1rem;
 }
-
+ul{
+    padding:20px;
+}
 .highlights h4{
     margin-bottom: 0;
     font-size: 1.2rem;
@@ -20,16 +22,3 @@
     padding: 0;
 }
 
-/* Tablets view */
-/* @media all and (max-width: 960px) {
-    .aboutText {
-        word-spacing: 2px;
-    }
-} */
-
-/* Mobile view */
-/* @media all and (max-width: 500px) {
-    .aboutText {
-        word-spacing: 2px;
-    }
-} */
