@@ -124,6 +124,23 @@
   font-weight: 600;
 }
 
+.linkedIn:hover{
+  color: unset;
+}
+
+.twitter:hover{
+  color:unset;
+}
+
+.insta:hover{
+  color: unset;
+}
+
+.github:hover{
+  color:unset;
+}
+
+
 }
 
 @media all and (max-width: 450px) {
