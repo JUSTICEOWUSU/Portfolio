@@ -125,19 +125,23 @@
 }
 
 .linkedIn:hover{
-  color: unset;
+     color: rgb(111, 111, 143);
+
 }
 
 .twitter:hover{
-  color:unset;
+   color: rgb(111, 111, 143);
+
 }
 
 .insta:hover{
-  color: unset;
+     color: rgb(111, 111, 143);
+
 }
 
 .github:hover{
-  color:unset;
+   color: rgb(111, 111, 143);
+
 }
 
 
