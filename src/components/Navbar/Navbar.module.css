@@ -3,6 +3,9 @@
     padding: 10px;
     text-align: left;
     margin: auto;
+    padding-left:0;
+    margin-left:0;
+
 }
 
 .fixing{
@@ -20,6 +23,17 @@
     font-weight: bolder;
     letter-spacing: 2px;
 }
+
+
+@media all and (max-width:1000px) {
+    .navbar {
+        padding: 0;
+        margin-left:0px;
+        text-align:left;
+    }
+
+}
+
 
 @media all and (max-width:600px) {
     .navbarTitle {

@@ -8,7 +8,7 @@ import AboutSection from '../components/Sections/AboutSection/AboutSection';
 
 function AppPage() {
   return (
-    <div className={`${style.App} row px-sm-0`}>
+    <div className={`${style.App} row px-sm-0 g-0` }>
       <div className={` ${style.Hero} col-lg-6 col-12 ms-md-0 px-sm-0 m-sm-0`}>
         <HeroSection />
       </div>

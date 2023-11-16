@@ -12,6 +12,7 @@
     .heroSection{
         padding-left:0px;
         margin-left:30px;
+        min-height:unset;
     }
 }
 
@@ -19,7 +20,6 @@
     .heroSection{
         padding: 0;
         margin: 0;
-        min-height:unset;
-        bordr:1px solid red;
+        /* min-height:100vh; */
     }
 }

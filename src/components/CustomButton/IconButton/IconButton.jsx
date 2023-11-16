@@ -5,8 +5,8 @@ import style from "./IconButton.module.css"
 
 function IconButton({text,link,component}) {
     return (
- <span className={`col-4`}>
-         <a href={`${link}`} className={`${style.socialIcon}`}>
+ <span className={`col-3`}>
+         <a href={`${link}`} target="_blank" rel="noopener noreferrer" className={`${style.socialIcon}`}>
           {component}
                 <span className={`${style.IconText}`}>{ text}</span>
         </a>

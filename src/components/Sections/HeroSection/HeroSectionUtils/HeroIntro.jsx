@@ -2,8 +2,9 @@ import React from "react";
 import {TypeAnimation} from "react-type-animation";
 import style from "./HeroIntro.module.css";
 import CustomButton from "../../../CustomButton/CustomButton";
-import { BsTwitter } from "react-icons/bs";
-import { FaInstagramSquare, FaGithub } from "react-icons/fa";
+import { CiLinkedin, CiInstagram } from "react-icons/ci";
+import { RiTwitterXLine } from "react-icons/ri";
+import {  FaGithub } from "react-icons/fa";
 import IconButton from "../../../CustomButton/IconButton/IconButton";
 
 function HeroIntro() {
@@ -42,18 +43,21 @@ function HeroIntro() {
             />
           </span>
           <span className={`${style.description}`}>
-            I'm a passionate developer skilled in creating web applications that
-            seamlessly blend frontend and backend functionalities. I specialize
-            in crafting functional and visually appealing websites using the
-            latest tools. I'm driven by a constant desire to learn and take on
-            new challenges, all with the aim of delivering exceptional user
-            experiences.
+            I'm a passionate web developer skilled in creating web applications
+            that seamlessly blend frontend and backend functionalities. I
+            specialize in crafting functional and visually appealing websites
+            using the latest tools. I'm driven by a constant desire to learn and
+            take on new challenges, all with the aim of delivering exceptional
+            user experiences.
           </span>
         </p>
 
         <span className={`${style.buttons}`}>
           {" "}
-          <a href="#resume">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1YVcBY2SH4Xvfhvc2T3NRDgOmKMzDKAg-"
+            download="JusticeOwusu's resume.pdf"
+          >
             <CustomButton text={"Download Resume"} bstyle={customStyle} />
           </a>
         </span>
@@ -61,19 +65,24 @@ function HeroIntro() {
         <span className={`${style.IconsCont}`}>
           <span className={`container row p-0 g-0`}>
             <IconButton
-              text={"twitter"}
-              link={"#"}
-              component={<BsTwitter className={`${style.twitter}`} />}
+              text={"github"}
+              link={"https://github.com/JUSTICEOWUSU"}
+              component={<FaGithub className={`${style.github}`} />}
             />
             <IconButton
               text={"Instagram"}
-              link={"#"}
-              component={<FaInstagramSquare className={`${style.insta}`} />}
+              link={"https://instagram.com/_owusudev"}
+              component={<CiInstagram className={`${style.insta}`} />}
             />
             <IconButton
-              text={"github"}
-              link={"#"}
-              component={<FaGithub className={`${style.github}`} />}
+              text={"LinkedIn"}
+              link={"https://www.linkedin.com/in/justice-owusu-43a0a1299"}
+              component={<CiLinkedin className={`${style.linkedIn}`} />}
+            />
+            <IconButton
+              text={"Twitter"}
+              link={"https://twitter.com/_owusudev"}
+              component={<RiTwitterXLine className={`${style.twitter}`} />}
             />
           </span>
         </span>

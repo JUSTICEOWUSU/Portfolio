@@ -19,9 +19,9 @@
   padding: 35px;
   margin-bottom:25px;
   background:"var(--primary)";
-  webkit-box-shadow: 5px 6px 12px 6px rgba(0, 0, 0, 0.45);
-  -moz-box-shadow: 5px 6px 12px 6px rgba(0, 0, 0, 0.45);
-  box-shadow: 5px 6px 12px 6px rgba(0, 0, 0, 0.45);
+  webkit-box-shadow: 5px 6px 5px 6px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 5px 6px 5px 6px rgba(0, 0, 0, 0.45);
+  box-shadow: 5px 6px 5px 6px rgba(0, 0, 0, 0.45);
 transition: transform 0.3s ease;
 }
 
