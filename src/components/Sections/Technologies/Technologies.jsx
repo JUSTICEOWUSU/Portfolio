@@ -14,6 +14,8 @@ import {
   SiFirebase,
   SiJquery,
   SiGraphql,
+  SiTailwindcss
+
 } from "react-icons/si";
 
 
@@ -36,6 +38,11 @@ const myArray = [
   {
     name: "react.js",
     icon: FaReact,
+  },
+
+  {
+    name:"tailwind css",
+    icon:SiTailwindcss
   },
 
   {
